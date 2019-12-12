@@ -1,0 +1,27 @@
+{
+  "name": "aatm1-protractor-cucumber",
+  "version": "1.0.0",
+  "description": "protractor-cucumber framework",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "webdriver-manager update --versions.chrome=78.0.3904.105",
+    "test": "protractor config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaximLiubinski/AATM1-Protractor-Cucumber.git"
+  },
+  "author": "Maksim Liubinski",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MaximLiubinski/AATM1-Protractor-Cucumber/issues"
+  },
+  "homepage": "https://github.com/MaximLiubinski/AATM1-Protractor-Cucumber#readme",
+  "dependencies": {
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "cucumber": "^6.0.5",
+    "protractor": "^5.4.2",
+    "protractor-cucumber-framework": "^6.2.0"
+  }
+}
