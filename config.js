@@ -13,7 +13,8 @@ exports.config = {
         }
     },
     onPrepare: function () {
-        browser.waitForAngularEnabled(false);
+        // browser.waitForAngularEnabled(false);
+        browser.ignoreSynchronization = true;
     },
 
     cucumberOpts: {

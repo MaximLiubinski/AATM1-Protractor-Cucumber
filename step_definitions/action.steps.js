@@ -15,9 +15,7 @@ Given(/^I open base URL$/,function () {
 });
 
 Given(/^I logged in RP$/, async function() {
-    browser.waitForAngularEnabled(false);
     await browser.get(browser.baseUrl);
-    // await browser.setLocation('');
     state.setState("Login");
     await browser.wait(EC.visibilityOf(query.getProtractorElement("Right Block -> Login")), 10000);
     await query.getProtractorElement("Right Block -> Login").clear();
