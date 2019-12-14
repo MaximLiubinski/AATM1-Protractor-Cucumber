@@ -1,11 +1,11 @@
 const { Then, setDefaultTimeout } = require("cucumber");
 const query = require("../utils/query");
-const state = require("../utils/state");
+// const state = require("../utils/state");
 const EC = protractor.ExpectedConditions;
 const chai = require("chai");
 const chaiAsPromised = require("chai-as-promised");
 chai.use(chaiAsPromised);
-const expect = chai.expect;
+// const expect = chai.expect;
 chai.should();
 
 setDefaultTimeout(60000);
