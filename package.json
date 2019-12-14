@@ -7,6 +7,11 @@
     "postinstall": "webdriver-manager update --versions.chrome=78.0.3904.105",
     "test": "protractor config.js"
   },
+  "husky": {
+    "hooks": {
+
+    }
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/MaximLiubinski/AATM1-Protractor-Cucumber.git"
@@ -21,7 +26,16 @@
     "chai": "^4.2.0",
     "chai-as-promised": "^7.1.1",
     "cucumber": "^6.0.5",
+    "husky": "^3.1.0",
     "protractor": "^5.4.2",
     "protractor-cucumber-framework": "^6.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^6.7.2",
+    "eslint-config-standard": "^14.1.0",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
   }
 }

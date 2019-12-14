@@ -1,22 +1,22 @@
-const path = require('path');
-const world = require(path.resolve('./pages/world'));
+const path = require("path");
+const world = require(path.resolve("./pages/world"));
 
 class State {
-    constructor() {
-        this.state = {};
-    }
+	constructor() {
+		this.state = {};
+	}
 
-    setState(pageName) {
-        this.state = world[pageName];
-    }
+	setState(pageName) {
+		this.state = world[pageName];
+	}
 
-    getState() {
-        return this.state;
-    }
+	getState() {
+		return this.state;
+	}
 
-    getUrl() {
-        return this.state["urlPart"];
-    }
+	getUrl() {
+		return this.state["urlPart"];
+	}
 
 }
 
